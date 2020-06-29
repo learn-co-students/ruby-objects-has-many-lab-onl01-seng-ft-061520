@@ -1,4 +1,11 @@
-# class author 
-#   attr_accessor :name 
+class Author 
+  
+  attr_accessor :name 
 
-# end 
+  def initialize(name)
+    @name = name 
+  end 
+  
+  
+
+end 
