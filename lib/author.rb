@@ -6,7 +6,6 @@ class Author
     @name = name
   end 
   
-  
   def posts 
     Post.all.select do |post|
       post.author = self
@@ -25,9 +24,5 @@ class Author
   def self.post_count
     Post.all.count
   end 
- 
-  
-  
-  
   
 end 
