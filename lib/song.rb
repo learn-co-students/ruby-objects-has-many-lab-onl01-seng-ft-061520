@@ -1,8 +1,13 @@
 class Song 
-  '
-@@all = []
+  
+  attr_accessor :name, :artist #makes accessible an artist property
+  
+  @@all = []
+  
+  def initialize(name)
+    @name = name
+    @@all << self
+end
 
-def initialize(name)
-@name = name
-@@all << name
+
 end
